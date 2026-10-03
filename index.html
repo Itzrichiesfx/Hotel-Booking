@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hotel Booking</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </span>
+
+                <span>Hotel Booking</span>
+            </a>
+
+
+            <nav class="desktop-nav">
+                <a href="#hotels">Hotels</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#deals">Deals</a>
+                <a href="#about">About</a>
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="language-btn">
+                    <i class="fa-solid fa-globe"></i>
+                    EN
+                </button>
+
+                <button class="login-btn">
+                    Sign in
+                </button>
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile navigation -->
+
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+        >
+
+            <a href="#hotels">Hotels</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#deals">Deals</a>
+            <a href="#about">About</a>
+
+            <button>
+                Sign in
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-sparkles"></i>
+                    Find your perfect stay
+                </span>
+
+                <h1>
+                    Your next
+                    <span>great stay</span>
+                    starts here.
+                </h1>
+
+                <p>
+                    Discover hotels, resorts and unique stays
+                    around the world at prices you'll love.
+                </p>
+
+
+                <!-- Search Box -->
+
+                <div class="search-panel">
+
+                    <div class="search-field">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <label>Destination</label>
+
+                            <input
+                                type="text"
+                                id="destinationInput"
+                                placeholder="Where are you going?"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <div>
+                            <label>Check-in</label>
+
+                            <input
+                                type="date"
+                                id="checkIn"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <div>
+                            <label>Check-out</label>
+
+                            <input
+                                type="date"
+                                id="checkOut"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-field guests-field">
+
+                        <i class="fa-solid fa-user-group"></i>
+
+                        <div>
+                            <label>Guests</label>
+
+                            <select id="guests">
+
+                                <option value="1">
+                                    1 Guest
+                                </option>
+
+                                <option value="2" selected>
+                                    2 Guests
+                                </option>
+
+                                <option value="3">
+                                    3 Guests
+                                </option>
+
+                                <option value="4">
+                                    4 Guests
+                                </option>
+
+                                <option value="5">
+                                    5+ Guests
+                                </option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="search-btn"
+                        id="searchBtn"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DESTINATIONS
+        ========================================== -->
+
+        <section
+            class="section"
+            id="destinations"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="eyebrow">
+                            EXPLORE
+                        </span>
+
+                        <h2>
+                            Popular destinations
+                        </h2>
+                    </div>
+
+                    <a href="#hotels" class="view-all">
+                        View all
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="destination-grid">
+
+                    <article
+                        class="destination-card large"
+                        data-city="Dubai"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80"
+                            alt="Dubai skyline"
+                        >
+
+                        <div class="destination-overlay">
+
+                            <h3>Dubai</h3>
+
+                            <p>
+                                1,240 properties
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="destination-card"
+                        data-city="Paris"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                            alt="Paris"
+                        >
+
+                        <div class="destination-overlay">
+
+                            <h3>Paris</h3>
+
+                            <p>
+                                980 properties
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="destination-card"
+                        data-city="London"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80"
+                            alt="London"
+                        >
+
+                        <div class="destination-overlay">
+
+                            <h3>London</h3>
+
+                            <p>
+                                860 properties
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="destination-card"
+                        data-city="Lagos"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1568099622415-8b7e0b2c7c7b?auto=format&fit=crop&w=800&q=80"
+                            alt="Lagos"
+                        >
+
+                        <div class="destination-overlay">
+
+                            <h3>Lagos</h3>
+
+                            <p>
+                                420 properties
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HOTEL SECTION
+        ========================================== -->
+
+        <section
+            class="section hotels-section"
+            id="hotels"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="eyebrow">
+                            HANDPICKED FOR YOU
+                        </span>
+
+                        <h2>
+                            Popular hotels
+                        </h2>
+                    </div>
+
+
+                    <div class="sort-wrapper">
+
+                        <label for="sortSelect">
+                            Sort by
+                        </label>
+
+                        <select id="sortSelect">
+
+                            <option value="recommended">
+                                Recommended
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="rating">
+                                Highest Rated
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="content-layout">
+
+                    <!-- Filters -->
+
+                    <aside class="filters">
+
+                        <div class="filter-header">
+
+                            <h3>Filters</h3>
+
+                            <button id="clearFilters">
+                                Clear
+                            </button>
+
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <h4>Price per night</h4>
+
+                            <div class="price-inputs">
+
+                                <input
+                                    type="number"
+                                    id="minPrice"
+                                    placeholder="Min"
+                                >
+
+                                <span>—</span>
+
+                                <input
+                                    type="number"
+                                    id="maxPrice"
+                                    placeholder="Max"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <h4>Star rating</h4>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    value="5"
+                                    class="rating-filter"
+                                >
+                                <span>★★★★★</span>
+                                <small>5 star</small>
+                            </label>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    value="4"
+                                    class="rating-filter"
+                                >
+                                <span>★★★★</span>
+                                <small>4 star</small>
+                            </label>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    value="3"
+                                    class="rating-filter"
+                                >
+                                <span>★★★</span>
+                                <small>3 star</small>
+                            </label>
+
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <h4>Amenities</h4>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    class="amenity-filter"
+                                    value="pool"
+                                >
+                                <span>Swimming pool</span>
+                            </label>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    class="amenity-filter"
+                                    value="wifi"
+                                >
+                                <span>Free Wi-Fi</span>
+                            </label>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    class="amenity-filter"
+                                    value="parking"
+                                >
+                                <span>Free parking</span>
+                            </label>
+
+                            <label class="check-option">
+                                <input
+                                    type="checkbox"
+                                    class="amenity-filter"
+                                    value="breakfast"
+                                >
+                                <span>Breakfast</span>
+                            </label>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- Hotels -->
+
+                    <div>
+
+                        <div
+                            class="results-info"
+                            id="resultsInfo"
+                        >
+                            Showing 6 hotels
+                        </div>
+
+
+                        <div
+                            class="hotel-grid"
+                            id="hotelGrid"
+                        >
+
+                            <!-- Hotel cards generated by JavaScript -->
+
+                        </div>
+
+
+                        <div
+                            class="no-results"
+                            id="noResults"
+                        >
+
+                            <i class="fa-solid fa-hotel"></i>
+
+                            <h3>
+                                No hotels found
+                            </h3>
+
+                            <p>
+                                Try changing your search or filters.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DEALS
+        ========================================== -->
+
+        <section
+            class="deal-section"
+            id="deals"
+        >
+
+            <div class="container">
+
+                <div class="deal-card">
+
+                    <div class="deal-content">
+
+                        <span class="eyebrow">
+                            LIMITED TIME OFFER
+                        </span>
+
+                        <h2>
+                            Get 20% off your
+                            next adventure.
+                        </h2>
+
+                        <p>
+                            Sign up today and receive an exclusive
+                            discount on your first booking.
+                        </p>
+
+                        <button id="dealBtn">
+                            Get the deal
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="deal-icon">
+                        <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             WHY US
+        ========================================== -->
+
+        <section
+            class="section"
+            id="about"
+        >
+
+            <div class="container">
+
+                <div class="section-header centered">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            WHY Hotel Booking
+                        </span>
+
+                        <h2>
+                            Travel with confidence
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefits">
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h3>
+                            Secure booking
+                        </h3>
+
+                        <p>
+                            Your information is protected
+                            throughout the booking process.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+
+                        <h3>
+                            Best prices
+                        </h3>
+
+                        <p>
+                            Find competitive prices on thousands
+                            of hotels worldwide.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>
+                            24/7 support
+                        </h3>
+
+                        <p>
+                            Our support team is available whenever
+                            you need assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-hotel"></i>
+                    </span>
+
+                    Hotel Booking
+                </a>
+
+                <p>
+                    Making hotel booking simple,
+                    secure and enjoyable.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="#hotels">Hotels</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#deals">Deals</a>
+                </div>
+
+                <div>
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Careers</a>
+                </div>
+
+                <div>
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 Hotel Booking. All rights reserved.
+            </span>
+
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         HOTEL MODAL
+    ========================================== -->
+
+    <div
+        class="modal"
+        id="hotelModal"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                data-close="hotelModal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div id="hotelModalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         BOOKING MODAL
+    ========================================== -->
+
+    <div
+        class="modal"
+        id="bookingModal"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="booking-modal">
+
+            <button
+                class="modal-close"
+                data-close="bookingModal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="booking-header">
+
+                <span class="eyebrow">
+                    RESERVATION
+                </span>
+
+                <h2>
+                    Complete your booking
+                </h2>
+
+                <p id="bookingHotelName"></p>
+
+            </div>
+
+
+            <form id="bookingForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>
+                            First name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            required
+                            placeholder="John"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Last name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            required
+                            placeholder="Doe"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>
+                            Check-in
+                        </label>
+
+                        <input
+                            type="date"
+                            id="bookingCheckIn"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Check-out
+                        </label>
+
+                        <input
+                            type="date"
+                            id="bookingCheckOut"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="booking-summary">
+
+                    <div>
+                        <span>Room price</span>
+                        <strong id="bookingPrice">
+                            $0
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Number of nights</span>
+                        <strong id="bookingNights">
+                            1
+                        </strong>
+                    </div>
+
+                    <div class="total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="bookingTotal">
+                            $0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="confirm-btn"
+                >
+                    Confirm booking
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Toast -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        <i class="fa-solid fa-circle-check"></i>
+        <span></span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
